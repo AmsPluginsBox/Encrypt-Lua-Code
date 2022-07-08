@@ -1,7 +1,6 @@
 # Encrypt-Lua-Code
 Encrypt Lua Code, and call it through an AmsLuac dll
 
-
 It is a great tool for LUA code protection,
 It supports lua5.1.4, not tested with other versions of LUA, but I believe it is possible to use it in other versions of LUA.
 
@@ -12,12 +11,15 @@ It supports lua5.1.4, not tested with other versions of LUA, but I believe it is
 3 = Note, it is a tool that will encrypt only LUA code.
 
 4 = As an example, we will use a function.
+
 -------------------------------------------------- ---------------------------------------------
+
 -- function
 
 function TestLuaEncrypt()
 
 -- moon script
+
 t = {"A","B","C"}
 
 for t, j in pairs(t) do
@@ -31,12 +33,15 @@ end
 return P;
 
 end
+
 -------------------------------------------------- ---------------------------------------------
+
 5 = To encrypt this function use the executable "LuaEncrypt.exe"
 
 6 = To call this function already encrypted use "AmsLuac.dll"
 
 -------------------------------------------------- ---------------------------------------------
+
 pcall(package.loadlib("AmsLuac.dll", "irPlg_Action_RegisterActions"));
 
 AmsLuac.LoadFile("LuaEncrypt.cl"); ---- this " LuaEncrypt.cl" is your encrypted function
@@ -44,4 +49,5 @@ AmsLuac.LoadFile("LuaEncrypt.cl"); ---- this " LuaEncrypt.cl" is your encrypted 
 -- function;
 
 TestLuaEncrypt();
+
 -------------------------------------------------- ---------------------------------------------
