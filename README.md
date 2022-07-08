@@ -14,21 +14,28 @@ It supports lua5.1.4, not tested with other versions of LUA, but I believe it is
 4 = As an example, we will use a function.
 -------------------------------------------------- ---------------------------------------------
 -- function
+
 function TestLuaEncrypt()
 
--- Lua script
+-- moon script
 t = {"A","B","C"}
+
 for t, j in pairs(t) do
+
 p = j;
+
 print(p);
+
 end
 
 return P;
+
 end
 -------------------------------------------------- ---------------------------------------------
 5 = To encrypt this function use the executable "LuaEncrypt.exe"
 
 6 = To call this function already encrypted use "AmsLuac.dll"
+
 -------------------------------------------------- ---------------------------------------------
 pcall(package.loadlib("AmsLuac.dll", "irPlg_Action_RegisterActions"));
 
