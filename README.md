@@ -31,8 +31,10 @@ end
 6 = To call this function already encrypted use "AmsLuac.dll"
 -------------------------------------------------- ---------------------------------------------
 pcall(package.loadlib("AmsLuac.dll", "irPlg_Action_RegisterActions"));
+
 AmsLuac.LoadFile("LuaEncrypt.cl"); ---- this " LuaEncrypt.cl" is your encrypted function
 
 -- function;
+
 TestLuaEncrypt();
 -------------------------------------------------- ---------------------------------------------
