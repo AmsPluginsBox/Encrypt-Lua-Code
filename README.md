@@ -44,7 +44,7 @@ end
 
 pcall(package.loadlib("AmsLuac.dll", "irPlg_Action_RegisterActions"));
 
-AmsLuac.LoadFile("LuaEncrypt.cl"); ---- this " LuaEncrypt.cl" is your encrypted function
+AmsLuac.LoadFile("LuaEncrypt.cl"); ---- file
 
 --- function;
 
