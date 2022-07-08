@@ -14,11 +14,11 @@ It supports lua5.1.4, not tested with other versions of LUA, but I believe it is
 
 -------------------------------------------------- ---------------------------------------------
 
----- function
+--- function
 
 function TestLuaEncrypt()
 
----- LUA script
+--- LUA script
 
 t = {"A","B","C"}
 
@@ -46,7 +46,7 @@ pcall(package.loadlib("AmsLuac.dll", "irPlg_Action_RegisterActions"));
 
 AmsLuac.LoadFile("LuaEncrypt.cl"); ---- this " LuaEncrypt.cl" is your encrypted function
 
----- function;
+--- function;
 
 TestLuaEncrypt();
 
